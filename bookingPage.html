@@ -1,0 +1,180 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" ="width=device-width,initial-scale=1.0" />
+    <title>Emerald Escapes Experiences</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <p>Emerald Escapes</p>
+      <ul id="ulHeader">
+        <li><a href="./index.html"> Home</a></li>
+        <li><a href="./experiences.html"> Experiences</a></li>
+        <li><a href="./contactUs.html"> Contact Us</a></li>
+      </ul>
+    </header>
+    <div id="booking-page">
+      <h2>
+        To book any of the experiences listed please fill out the form below and
+        we will be in touch!
+      </h2>
+      <p>
+        If there are any problems or questions please
+        <a href="./contactUs.html"> contact us</a>
+      </p>
+      <p>Fields marked * are mandatory</p>
+      <form action="" method="post" class="speaker-form">
+        <div class="form-row">
+          <label for="name">Name *</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="FirstName LastName"
+          />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email *</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="example@example.com"
+          />
+        </div>
+
+        <div class="form-row">
+          <label for="confirm-email">Please Confirm Email Address *</label>
+          <input
+            id="confirm-email"
+            name="confirm-email"
+            type="email"
+            placeholder="IMPLEMENT WITH JS if (email = email ) {accept} example@example.com"
+          />
+        </div>
+
+        <div class="form-row">
+          <label for="phone-number">Phone Number *</label>
+          <input
+            id="phone-number"
+            name="phone-number"
+            type="text"
+            placeholder="Country Code + phone number"
+          />
+        </div>
+
+        <div class="form-row">
+          <label for="experiences">Experience Options *</label>
+          <select id="experiences" name="experiences">
+            <option value="blank-default"></option>
+            <option value="nature-walk">
+              Nature walk with mountain or local guide
+            </option>
+            <option value="foraging-walk">
+              Foraging walk around our property
+            </option>
+            <option value="cooking-class">
+              Cookery and baking class in our kitchens
+            </option>
+            <option value="mini-bus">
+              Book our minibus to Kilkenny for nights out
+            </option>
+            <option value="bird-watching">
+              Guided birdwatching experiences locally
+            </option>
+            <option value="spa-experiences">
+              Spa Experiences with one of our partners
+            </option>
+            <option value="horse-trekking">
+              Local horse treks with one of our partners
+            </option>
+            <option value="city-tour-dublin">
+              Guided city tour Dublin with a local partnered guide
+            </option>
+            <option value="city-tour-kilkenny">
+              Guided city tour Kilkenny with a local partnered guide
+            </option>
+            <option value="city-tour-waterford">
+              Guided city tour Waterford with a local partnered guide
+            </option>
+            <option value="kayaking">
+              Kayaking on the river BLANK VALUE with a local guide
+            </option>
+            <option value="canoeing">
+              Canoeing on river BLANK VALUE with a local guide
+            </option>
+            <option value="cliff-and-coastal-walks">
+              Guided walks in coastal areas with one of our partners
+            </option>
+            <option value="coast-wildlife-watching">
+              Coastal wildlife and birdwatching experience with a local guide
+            </option>
+            <option value="traditional-music">
+              Traditional Irish music events in local pubs in Dublin, Kilkenny
+              or Waterford depending on dates
+            </option>
+            <option value="heritage-tours">
+              Trips to several castles and heritage sites price includes access
+              to sites
+            </option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="experienceDate">Selected date</label>
+          <input type="date" id="experienceDate" name="experienceDate" />
+        </div>
+
+        <!-- <textarea rows="15" cols="80"></textarea> -->
+
+        <div class="form-row">
+          <label for="commentsAndRequests"
+            >Any comments or special requests ALSO IMPLEMENT COST, NO of people
+            and JS for TOTAL cost</label
+          >
+          <textarea
+            id="commentsAndRequests"
+            name="commentsAndRequests"
+            rows="4"
+            cols="50"
+            minlength="10"
+            maxlength="750"
+            placeholder="Type any comments or special requests here (10-240 characters)
+            "
+          ></textarea>
+        </div>
+        <div class="form-row" id="submit-button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+
+      ◦ Booking ◦ Payment ◦ General Information ◦ Other • Message Apply
+      client-side validation for: required fields • Valid phone number • A
+      minimum message length
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <button>class="navigationButton">Home</button>
+
+      <p><a href="index.html">Home Button</a></p>
+    </div>
+  </body>
+  <footer>
+    <p>Emerald Escapes 2026</p>
+  </footer>
+</html>
