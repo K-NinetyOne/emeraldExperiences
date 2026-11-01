@@ -5,18 +5,18 @@
 }
 
 body {
-  background-color: orange;
+  background-color: #ffa500;
 }
 
 header {
-  background-color: rgb(0, 112, 0);
+  background-color: #007000;
   color: white;
   display: flex;
   font-weight: bolder;
   font-size: 22px;
   justify-content: space-between;
   align-items: center;
-  padding: 1vw 10vw;
+  padding: 1vw 5vw;
   gap: 24px;
 }
 
@@ -25,7 +25,8 @@ footer {
 }
 
 .heroBanner {
-  background-color: rgb(0, 112, 0);
+  background-color: #007000;
+  color: white;
   padding: 2vw 10vw 2vw 10vw;
   margin: 0;
 }
@@ -43,7 +44,7 @@ footer {
   display: inline-flex;
   justify-self: flex-end;
   list-style-type: none;
-  color: black;
+  color: white;
   margin: 0;
   padding: 0;
   gap: 18px;
@@ -59,13 +60,26 @@ ul {
   font-weight: lighter;
 }
 
+ul:visited {
+  color: initial;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:visited {
+  color: initial;
+}
+
 #aboutUs {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(238, 236, 236);
+  background-color: #ffffff;
   padding: 2vw 10vw;
-  font-size: 18px;
+  font-size: 16px;
   color: #1f2937;
   font-weight: 300;
 }
@@ -94,10 +108,11 @@ ul {
 img {
   width: 250px;
   height: 175px;
+  border-radius: 5;
 }
 
 .experiences {
-  background-color: white;
+  background-color: #ffffff;
   border-style: dashed;
   border-width: 1px;
   border-color: purple;
@@ -108,11 +123,10 @@ img {
   gap: 18px 12px;
   width: 100%;
   flex: 1 1 25%;
-  /* min-height: 15vw; */
 }
 
 .experienceDiv {
-  background-color: orange;
+  background-color: #ffa500;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -123,18 +137,13 @@ img {
   gap: 1vw;
   flex: 1 1 20%;
   border-radius: 10px;
-  /* max-height: 30vh;
-  min-height: 30vh;
-  min-width: 25vw;*/
-  /* max-width: 25vw; */
   border-style: solid;
   border-width: 1px;
   border-color: red;
 }
 
 .experienceDiv:hover {
-  background-color: rgb(4, 88, 4);
-  color: white;
+  background-color: rgb(179, 182, 179);
   font-weight: bold;
 }
 
@@ -145,11 +154,21 @@ img {
   align-items: center;
 }
 
+#bookingPageBanner {
+  text-align: center;
+  background-color: white;
+  margin: 0px;
+}
+
 form {
   background-color: lightgray;
   margin: 25px 25px;
   padding: 25px 100px;
   max-width: 80vw;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .form-row {
