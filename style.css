@@ -1,3 +1,7 @@
+/* To do:
+Fix the width of the banners to ensure good color spreads properly
+Standardise the color scheme across pages where the pages share the same DIVs */
+
 /* Global styling */
 
 * {
@@ -12,6 +16,7 @@ header {
   background-color: #007000;
   color: white;
   display: flex;
+  flex-grow: 1;
   font-weight: bolder;
   font-size: 22px;
   justify-content: space-between;
@@ -118,7 +123,6 @@ img {
   border-color: purple;
   display: flex;
   justify-content: space-evenly;
-  align-content: center;
   flex-wrap: wrap;
   gap: 18px 12px;
   width: 100%;
@@ -143,8 +147,12 @@ img {
 }
 
 .experienceDiv:hover {
-  background-color: rgb(179, 182, 179);
+  background-color: rgb(236, 130, 9);
   font-weight: bold;
+}
+
+#experiencesFooter {
+  background-color: white;
 }
 
 #booking-page {
@@ -161,7 +169,7 @@ img {
 }
 
 form {
-  background-color: lightgray;
+  background-color: orange;
   margin: 25px 25px;
   padding: 25px 100px;
   max-width: 80vw;
