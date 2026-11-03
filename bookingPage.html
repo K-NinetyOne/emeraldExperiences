@@ -1,8 +1,8 @@
 <!-- To do:
 Fix the valdiations for the bookingPage form
 Tidy up html to get rid of artifacts from old stuff
-Add the darkmode toggle to bookingPage
-Fix the width of bookingForm so it resizes with the flexbox -->
+Fix the width of bookingForm so it resizes with the flexbox
+Get rid of contact us page and add info to bottom of form page, use a href to autoscroll to it -->
 
 <!doctype html>
 
@@ -21,6 +21,7 @@ Fix the width of bookingForm so it resizes with the flexbox -->
         <li><a href="./experiences.html"> Experiences</a></li>
         <li><a href="./contactUs.html"> Contact Us</a></li>
       </ul>
+      <button onclick="toggleDarkMode()">Dark Mode</button>
     </header>
     <div id="booking-page">
       <div id="bookingPageBanner">
@@ -30,7 +31,7 @@ Fix the width of bookingForm so it resizes with the flexbox -->
         </h2>
         <p>
           If there are any problems or questions please
-          <a href="./contactUs.html"> contact us</a>
+          <a href="./contactUs.html"> Contact us</a>
         </p>
         <p>Fields marked * are mandatory</p>
       </div>
@@ -42,6 +43,7 @@ Fix the width of bookingForm so it resizes with the flexbox -->
             name="name"
             type="text"
             placeholder="FirstName LastName"
+            required
           />
         </div>
 
@@ -52,6 +54,7 @@ Fix the width of bookingForm so it resizes with the flexbox -->
             name="email"
             type="email"
             placeholder="example@example.com"
+            required
           />
         </div>
 
@@ -62,6 +65,7 @@ Fix the width of bookingForm so it resizes with the flexbox -->
             name="confirm-email"
             type="email"
             placeholder="IMPLEMENT WITH JS if (email = email ) {accept} example@example.com"
+            required
           />
         </div>
 
@@ -72,78 +76,25 @@ Fix the width of bookingForm so it resizes with the flexbox -->
             name="phone-number"
             type="text"
             placeholder="Country Code + phone number"
+            required
           />
         </div>
 
         <div class="form-row">
-          <label for="experiences">Experience Options *</label>
-          <select id="experiences" name="experiences">
+          <label for="queries">Query Type</label>
+          <select id="queries" name="queries">
             <option value="blank-default"></option>
-            <option value="nature-walk">
-              Nature walk with mountain or local guide
-            </option>
-            <option value="foraging-walk">
-              Foraging walk around our property
-            </option>
-            <option value="cooking-class">
-              Cookery and baking class in our kitchens
-            </option>
-            <option value="mini-bus">
-              Book our minibus to Kilkenny for nights out
-            </option>
-            <option value="bird-watching">
-              Guided birdwatching experiences locally
-            </option>
-            <option value="spa-experiences">
-              Spa Experiences with one of our partners
-            </option>
-            <option value="horse-trekking">
-              Local horse treks with one of our partners
-            </option>
-            <option value="city-tour-dublin">
-              Guided city tour Dublin with a local partnered guide
-            </option>
-            <option value="city-tour-kilkenny">
-              Guided city tour Kilkenny with a local partnered guide
-            </option>
-            <option value="city-tour-waterford">
-              Guided city tour Waterford with a local partnered guide
-            </option>
-            <option value="kayaking">
-              Kayaking on the river BLANK VALUE with a local guide
-            </option>
-            <option value="canoeing">
-              Canoeing on river BLANK VALUE with a local guide
-            </option>
-            <option value="cliff-and-coastal-walks">
-              Guided walks in coastal areas with one of our partners
-            </option>
-            <option value="coast-wildlife-watching">
-              Coastal wildlife and birdwatching experience with a local guide
-            </option>
-            <option value="traditional-music">
-              Traditional Irish music events in local pubs in Dublin, Kilkenny
-              or Waterford depending on dates
-            </option>
-            <option value="heritage-tours">
-              Trips to several castles and heritage sites price includes access
-              to sites
-            </option>
+            <option value="booking">Booking Query</option>
+            <option value="payment">Payment Query</option>
+            <option value="general-info">General Information</option>
+            <option value="other">Other</option>
           </select>
         </div>
 
         <div class="form-row">
-          <label for="experienceDate">Selected date</label>
-          <input type="date" id="experienceDate" name="experienceDate" />
-        </div>
-
-        <!-- <textarea rows="15" cols="80"></textarea> -->
-
-        <div class="form-row">
           <label for="commentsAndRequests"
-            >Any comments or special requests ALSO IMPLEMENT COST, NO of people
-            and JS for TOTAL cost</label
-          >
+            >Any comments or special requests
+          </label>
           <textarea
             id="commentsAndRequests"
             name="commentsAndRequests"
@@ -159,11 +110,6 @@ Fix the width of bookingForm so it resizes with the flexbox -->
           <button type="submit">Submit</button>
         </div>
       </form>
-
-      ◦ Booking ◦ Payment ◦ General Information ◦ Other • Message Apply
-      client-side validation for: required fields • Valid phone number • A
-      minimum message length
-
       <br />
       <br />
       <br />
@@ -173,16 +119,11 @@ Fix the width of bookingForm so it resizes with the flexbox -->
       <br />
       <br />
       <br />
-      <br />
-      <br />
-      <br />
-
-      <button>class="navigationButton">Home</button>
-
-      <p><a href="index.html">Home Button</a></p>
+      <p><a href="index.html">Home</a></p>
     </div>
+    <footer>
+      <p>Emerald Escapes 2026</p>
+    </footer>
   </body>
-  <footer>
-    <p>Emerald Escapes 2026</p>
-  </footer>
+  <script src="./script.js"></script>
 </html>

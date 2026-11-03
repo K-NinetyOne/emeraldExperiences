@@ -10,6 +10,8 @@ Standardise the color scheme across pages where the pages share the same DIVs */
 
 body {
   background-color: #ffa500;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -22,7 +24,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1vw 5vw;
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 footer {
@@ -32,7 +34,8 @@ footer {
 .heroBanner {
   background-color: #007000;
   color: white;
-  padding: 2vw 10vw 2vw 10vw;
+  align-items: center;
+  padding: 0vw 10vw 1vw 10vw;
   margin: 0;
 }
 
@@ -42,7 +45,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  /* background-color: #ffa500; */
 }
 
 #ulHeader {
@@ -90,6 +94,7 @@ a:visited {
 }
 
 #experiencesList {
+  /* background-color: #ffa500; */
   display: flex;
   align-items: normal;
   justify-content: center;
@@ -118,9 +123,9 @@ img {
 
 .experiences {
   background-color: #ffffff;
-  border-style: dashed;
+  /* border-style: dashed;
   border-width: 1px;
-  border-color: purple;
+  border-color: purple; */
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -135,15 +140,15 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  flex: 0 1 20%;
   text-align: center;
   margin: 0;
   padding: 5px 2vw;
   gap: 1vw;
-  flex: 1 1 20%;
   border-radius: 10px;
-  border-style: solid;
+  /* border-style: solid;
   border-width: 1px;
-  border-color: red;
+  border-color: red; */
 }
 
 .experienceDiv:hover {
@@ -166,6 +171,7 @@ img {
   text-align: center;
   background-color: white;
   margin: 0px;
+  width: 100%;
 }
 
 form {
@@ -177,6 +183,7 @@ form {
   justify-content: flex-start;
   flex-direction: column;
   flex-wrap: wrap;
+  border-radius: 10px;
 }
 
 .form-row {
@@ -197,4 +204,8 @@ form {
 }
 
 .navigationButton {
+}
+
+footer {
+  border-style: dashed;
 }
