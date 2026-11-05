@@ -1,5 +1,4 @@
 <!-- To Do:
-Add href links to the bookingPage when one clicks on buttons on each experienceDiv
 Add images for the remaining experienceDivs
 Add descriptions to the remaining experienceDivs and content to them 
 -->
@@ -17,14 +16,17 @@ Add descriptions to the remaining experienceDivs and content to them
       <p>Emerald Escapes</p>
       <ul id="ulHeader">
         <li><a href="./index.html"> Home</a></li>
-        <li><a href="./bookingPage.html"> Booking Page</a></li>
-        <li><a href="./contactUs.html"> Contact Us</a></li>
+        <li><a href="./bookingPage.html"> Booking</a></li>
+        <button onclick="toggleDarkMode()">Dark Mode</button>
       </ul>
-      <button onclick="toggleDarkMode()">Dark Mode</button>
     </header>
     <h2>Read below for more information on the experiences on offer!</h2>
+
+    <!-- //Filters to implement: outdoors, indoors, family-friendly, nature,
+    historical, cultural, price// -->
+
     <div class="experiences">
-      <div class="experienceDiv">
+      <div class="experienceDiv accomadation">
         <img
           src="./images/glamping.jpg"
           alt="An image of two glamping yurts in a field"
@@ -38,13 +40,15 @@ Add descriptions to the remaining experienceDivs and content to them
           <br />
           Price: 50 euro PP per night
           <br />
+          Duration: 1 night
           <br />
-          <button><a href="./bookingPage.html"></a>BOOK NOW</button>
+          <br />
+          <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
         <!-- </div> -->
       </div>
 
-      <div class="experienceDiv">
+      <div class="experienceDiv outdoors nature">
         <!-- <div class="experienceDivBack"> -->
         <img
           src="./images/natureWalk.jpg"
@@ -61,12 +65,12 @@ Add descriptions to the remaining experienceDivs and content to them
           Duration: 3 hours
           <br />
           <br />
-          <button>BOOK NOW</button>
+          <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
         <!-- </div> -->
       </div>
 
-      <div class="experienceDiv">
+      <div class="experienceDiv outdoors nature">
         <!-- <div class="experienceDivBack"> -->
         <img
           src="./images/foraging.jpg"
@@ -81,13 +85,15 @@ Add descriptions to the remaining experienceDivs and content to them
           <br />
           Price: 50 euro PP
           <br />
+          Duration: 3 hours
           <br />
-          <button>BOOK NOW</button>
+          <br />
+          <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
         <!-- </div> -->
       </div>
 
-      <div class="experienceDiv">
+      <div class="experienceDiv indoors educational">
         <img
           src="./images/cooking.jpg"
           alt="An image of someone preparing to cook pasta"
@@ -95,14 +101,16 @@ Add descriptions to the remaining experienceDivs and content to them
         />
         <p>Cooking and baking classes</p>
         <p>
-          Learn new skills with our fun cookery and baking classes. Depending on
-          season will we use ingredients obtained on our foraging walks!
+          Learn new skills with our fun traditional cookery and baking classes.
+          Depending on season will we use ingredients obtained on our foraging
+          walks!
           <br />
           <br />
-          Price: 50 euro PP
+          Price: 20 euro popular<br />
+          Duration: 4 hours
           <br />
           <br />
-          <button>BOOK NOW</button>
+          <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
         <!-- </div> -->
       </div>
@@ -119,15 +127,16 @@ Add descriptions to the remaining experienceDivs and content to them
           and from the city. This is popular on weekends!
           <br />
           <br />
-          Price: 15 euro PP
+          Price: 15 euro PP<br />
+          Duration: Drop off/Pickup
           <br />
           <br />
-          <button>BOOK NOW</button>
+          <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
         <!-- </div> -->
       </div>
 
-      <div class="experienceDiv">
+      <div class="experienceDiv outdoors educational">
         <img
           src="./images/astronomy.jpg"
           alt="A telescope pointed toward the night sky"
@@ -139,37 +148,40 @@ Add descriptions to the remaining experienceDivs and content to them
           to stargazing, planets, constellations and more.
           <br />
           <br />
-          Price: 30 euro PP
+          Price: 15 euro <br />PP Duration: 2 hours
           <br />
           <br />
-          <button>BOOK NOW</button>
+          <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
         <!-- </div> -->
       </div>
 
-      <div class="experienceDiv">
+      <div class="experienceDiv outdoors nature educational">
         <img
           src="./images/glamping.jpg"
           alt="This is a placeholder for an image I made"
           class="experienceImage"
         />
-        <p>Placeholder</p>
+        <p>Birdwatching experiences</p>
         <p>
-          This is a placeholder DIV
+          Come and join us for a guided walk in the surrounding area to look for
+          local resident and migratory bird species!
           <br />
           <br />
-          Price: 50 euro PP
+          Price: 30 euro PP
+          <br />
+          Duration: 3 hours
           <br />
           <br />
-          <button>BOOK NOW</button>
+          <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
         <!-- </div> -->
       </div>
 
-      <div class="experienceDiv">
+      <div class="experienceDiv indoors relaxing">
         <img
-          src="./images/glamping.jpg"
-          alt="Placeholder"
+          src="./images/spa.jpg"
+          alt="A person getting a massage in a spa"
           class="experienceImage"
         />
         <p>Spa Experiences</p>
@@ -177,10 +189,12 @@ Add descriptions to the remaining experienceDivs and content to them
           Treat yourself to a relaxing spa experience in beautiful surroundings.
           <br />
           <br />
-          Price: 50 euro PP
+          Price: 100 euro PP
+          <br />
+          Duration: 4 hours
           <br />
           <br />
-          <button>BOOK NOW</button>
+          <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
         <!-- </div> -->
       </div>
@@ -199,44 +213,47 @@ Add descriptions to the remaining experienceDivs and content to them
           Price: 50 euro PP
           <br />
           <br />
-          <button>BOOK NOW</button>
+          <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
       </div>
 
-      <div class="experienceDiv">
+      <div class="experienceDiv educational outdoors cultural">
         <img
-          src="./images/glamping.jpg"
-          alt="This is a placeholder for an image I made"
+          src="./images/dublinTour.jpg"
+          alt="An image of a tour bus in Dublin City"
           class="experienceImage"
         />
         <p>Guided City Tours</p>
         <p>
-          This is a placeholder DIV
+          Try a tour with a local guide to learn the history of one of our
+          destination cities! (Kiklenny, Dublin, Waterford)
           <br />
           <br />
-          Price: 50 euro PP
+          Price: 30 euro PP<br />
+          Duration: 2 hours
           <br />
           <br />
-          <button>BOOK NOW</button>
+          <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
         <!-- </div> -->
       </div>
 
-      <div class="experienceDiv">
+      <div class="experienceDiv outdoors adventure">
         <img
-          src="./images/glamping.jpg"
-          alt="This is a placeholder"
+          src="./images/kayaking.jpg"
+          alt="A man kayaking on white water rapids"
           class="experienceImage"
         />
         <p>Kayaking and Canoeing</p>
         <p>
-          Plcaeholder
+          Rain or sun (you will probably get wet anyway!) try your skills with
+          kayaking and canoeing
           <br />
           <br />
-          Price: 50 euro PP
+          Price: 40 euro PP <br />Duration: 2 hours
           <br />
           <br />
-          <button>BOOK NOW</button>
+          <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
         <!-- </div> -->
       </div>
@@ -255,7 +272,7 @@ Add descriptions to the remaining experienceDivs and content to them
           Price: 50 euro PP
           <br />
           <br />
-          <button>BOOK NOW</button>
+          <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
         <!-- </div> -->
       </div>
@@ -274,7 +291,7 @@ Add descriptions to the remaining experienceDivs and content to them
           Price: 50 euro PP
           <br />
           <br />
-          <button>BOOK NOW</button>
+          <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
         <!-- </div> -->
       </div>
@@ -293,7 +310,7 @@ Add descriptions to the remaining experienceDivs and content to them
           Price: 50 euro PP
           <br />
           <br />
-          <button>BOOK NOW</button>
+          <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
         <!-- </div> -->
       </div>
@@ -312,7 +329,7 @@ Add descriptions to the remaining experienceDivs and content to them
           Price: 50 euro PP
           <br />
           <br />
-          <button>BOOK NOW</button>
+          <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
         <!-- </div> -->
       </div>
@@ -331,13 +348,13 @@ Add descriptions to the remaining experienceDivs and content to them
           Price: 50 euro PP
           <br />
           <br />
-          <button>BOOK NOW</button>
+          <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
       </div>
       <!-- </div> -->
     </div>
-
-    <a href="index.html">Home Button </a>
+    <br />
+    <a href="index.html">Home</a>
     <footer id="experiencesFooter">
       <p>Emerald Escapes 2026</p>
     </footer>

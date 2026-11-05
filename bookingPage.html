@@ -19,9 +19,8 @@ Get rid of contact us page and add info to bottom of form page, use a href to au
       <ul id="ulHeader">
         <li><a href="./index.html"> Home</a></li>
         <li><a href="./experiences.html"> Experiences</a></li>
-        <li><a href="./contactUs.html"> Contact Us</a></li>
+        <button onclick="toggleDarkMode()">Dark Mode</button>
       </ul>
-      <button onclick="toggleDarkMode()">Dark Mode</button>
     </header>
     <div id="booking-page">
       <div id="bookingPageBanner">
@@ -30,93 +29,97 @@ Get rid of contact us page and add info to bottom of form page, use a href to au
           and we will be in touch!
         </h2>
         <p>
-          If there are any problems or questions please
-          <a href="./contactUs.html"> Contact us</a>
+          If there are any problems or questions please contact us via the
+          details listed below!
+          <!-- <a href="./contactUs.html"> Contact us</a> -->
         </p>
         <p>Fields marked * are mandatory</p>
       </div>
-      <form action="" method="post" class="speaker-form">
-        <div class="form-row">
-          <label for="name">Name *</label>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            placeholder="FirstName LastName"
-            required
-          />
-        </div>
+      <div id="bookingPageMain">
+        <form action="" method="post" class="speaker-form">
+          <div class="form-row">
+            <label for="name">Name *</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="FirstName LastName"
+              required
+            />
+          </div>
 
-        <div class="form-row">
-          <label for="email">Email *</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="example@example.com"
-            required
-          />
-        </div>
+          <div class="form-row">
+            <label for="email">Email *</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="example@example.com"
+              required
+            />
+          </div>
 
-        <div class="form-row">
-          <label for="confirm-email">Please Confirm Email Address *</label>
-          <input
-            id="confirm-email"
-            name="confirm-email"
-            type="email"
-            placeholder="IMPLEMENT WITH JS if (email = email ) {accept} example@example.com"
-            required
-          />
-        </div>
+          <div class="form-row">
+            <label for="confirm-email">Please Confirm Email Address *</label>
+            <input
+              id="confirm-email"
+              name="confirm-email"
+              type="email"
+              placeholder="IMPLEMENT WITH JS if (email = email ) {accept} example@example.com"
+              required
+            />
+          </div>
 
-        <div class="form-row">
-          <label for="phone-number">Phone Number *</label>
-          <input
-            id="phone-number"
-            name="phone-number"
-            type="text"
-            placeholder="Country Code + phone number"
-            required
-          />
-        </div>
+          <div class="form-row">
+            <label for="phone-number">Phone Number *</label>
+            <input
+              id="phone-number"
+              name="phone-number"
+              type="text"
+              placeholder="Country Code + phone number"
+              required
+            />
+          </div>
 
-        <div class="form-row">
-          <label for="queries">Query Type</label>
-          <select id="queries" name="queries">
-            <option value="blank-default"></option>
-            <option value="booking">Booking Query</option>
-            <option value="payment">Payment Query</option>
-            <option value="general-info">General Information</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
+          <div class="form-row">
+            <label for="queries">Query Type</label>
+            <select id="queries" name="queries">
+              <option value="blank-default"></option>
+              <option value="booking">Booking Query</option>
+              <option value="payment">Payment Query</option>
+              <option value="general-info">General Information</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
 
-        <div class="form-row">
-          <label for="commentsAndRequests"
-            >Any comments or special requests
-          </label>
-          <textarea
-            id="commentsAndRequests"
-            name="commentsAndRequests"
-            rows="4"
-            cols="50"
-            minlength="10"
-            maxlength="750"
-            placeholder="Type any comments or special requests here (10-240 characters)
+          <div class="form-row">
+            <label for="commentsAndRequests"
+              >Any comments or special requests
+            </label>
+            <textarea
+              id="commentsAndRequests"
+              name="commentsAndRequests"
+              rows="4"
+              cols="50"
+              minlength="10"
+              maxlength="750"
+              placeholder="Type any comments or special requests here (10-240 characters)
             "
-          ></textarea>
+            ></textarea>
+          </div>
+          <div class="form-row" id="submit-button">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+        <br />
+        <div id="contactDetails">
+          <h3>Contact Us</h3>
+          <p>Phone (Barry): 0861234567</p>
+          <p>Phone (Pauline) 0871234567</p>
+          <p>Email: info@emeraldescapes.ie</p>
+          <p>Address: Emerald Escapes, Boris, Co. Carlow</p>
         </div>
-        <div class="form-row" id="submit-button">
-          <button type="submit">Submit</button>
-        </div>
-      </form>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      </div>
       <br />
       <br />
       <p><a href="index.html">Home</a></p>

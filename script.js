@@ -9,11 +9,14 @@ experienceDiv = document.querySelectorAll(".experienceDiv");
 experiencesFooter = document.querySelector("#experiencesFooter");
 bookingPageBanner = document.querySelector("#bookingPageBanner");
 form = document.querySelector("form");
+email = document.querySelector("#email");
+confirmEmail = document.querySelector("confirm-email");
 
 //Dark Mode Button
 
 let darkMode = false;
 
+//documentquerySelector all node list to apply eg. 'dark grey' multiple elements?? make an array of "was orange"??
 //Finalise actual color shceme for use and get rid of test alternate colors
 //Implement local storage to allow darkMode to carry across pages/ on refresh https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
 //Implement email and confirm email validation check. Implement alert with JS if form error
@@ -84,5 +87,7 @@ function toggleDarkMode() {
 }
 
 // function emailValidation()
+// // if (email.innerText !== confirmEmail.innerText) {
+// alert "email addresses do not match"}
 
 // function formSubmissionStatus()
