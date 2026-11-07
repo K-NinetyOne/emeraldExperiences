@@ -1,15 +1,12 @@
 <!-- To do:
-Fix the valdiations for the bookingPage form
-Tidy up html to get rid of artifacts from old stuff
-Fix the width of bookingForm so it resizes with the flexbox
-Get rid of contact us page and add info to bottom of form page, use a href to autoscroll to it -->
+Fix the width of bookingForm so it resizes with the flexbox-->
 
 <!doctype html>
 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" ="width=device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Emerald Escapes Experiences</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -19,7 +16,9 @@ Get rid of contact us page and add info to bottom of form page, use a href to au
       <ul id="ulHeader">
         <li><a href="./index.html"> Home</a></li>
         <li><a href="./experiences.html"> Experiences</a></li>
-        <button onclick="toggleDarkMode()">Dark Mode</button>
+        <button id="darkModeButton" onclick="toggleDarkMode()">
+          Dark Mode
+        </button>
       </ul>
     </header>
     <div id="booking-page">
@@ -36,7 +35,13 @@ Get rid of contact us page and add info to bottom of form page, use a href to au
         <p>Fields marked * are mandatory</p>
       </div>
       <div id="bookingPageMain">
-        <form action="" method="post" class="speaker-form">
+        <form
+          name="enquiryForm"
+          action=""
+          method="post"
+          class="speaker-form"
+          onsubmit="return validateEmail();"
+        >
           <div class="form-row">
             <label for="name">Name *</label>
             <input
@@ -65,7 +70,7 @@ Get rid of contact us page and add info to bottom of form page, use a href to au
               id="confirm-email"
               name="confirm-email"
               type="email"
-              placeholder="IMPLEMENT WITH JS if (email = email ) {accept} example@example.com"
+              placeholder="example@example.com"
               required
             />
           </div>
@@ -121,8 +126,7 @@ Get rid of contact us page and add info to bottom of form page, use a href to au
         </div>
       </div>
       <br />
-      <br />
-      <p><a href="index.html">Home</a></p>
+      <p><a class="pageBottom" href="index.html">Home</a></p>
     </div>
     <footer>
       <p>Emerald Escapes 2026</p>

@@ -1,7 +1,6 @@
-<!-- To Do:
-Add images for the remaining experienceDivs
-Add descriptions to the remaining experienceDivs and content to them 
--->
+<!-- To Do: 
+Add filter buttons for filter classes already added
+Add JS filter function for filters -->
 
 <!doctype html>
 
@@ -17,13 +16,15 @@ Add descriptions to the remaining experienceDivs and content to them
       <ul id="ulHeader">
         <li><a href="./index.html"> Home</a></li>
         <li><a href="./bookingPage.html"> Booking</a></li>
-        <button onclick="toggleDarkMode()">Dark Mode</button>
+        <button id="darkModeButton" onclick="toggleDarkMode()">
+          Dark Mode
+        </button>
       </ul>
     </header>
-    <h2>Read below for more information on the experiences on offer!</h2>
-
-    <!-- //Filters to implement: outdoors, indoors, family-friendly, nature,
-    historical, cultural, price// -->
+    <h3 id="experienceBanner">
+      Read below for more information on the experiences on offer! <br />You can
+      also filter experiences with the toggles below
+    </h3>
 
     <div class="experiences">
       <div class="experienceDiv accomadation">
@@ -45,11 +46,9 @@ Add descriptions to the remaining experienceDivs and content to them
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
-        <!-- </div> -->
       </div>
 
       <div class="experienceDiv outdoors nature">
-        <!-- <div class="experienceDivBack"> -->
         <img
           src="./images/natureWalk.jpg"
           alt="A hiking trail winding through heather and small trees"
@@ -67,11 +66,9 @@ Add descriptions to the remaining experienceDivs and content to them
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
-        <!-- </div> -->
       </div>
 
       <div class="experienceDiv outdoors nature">
-        <!-- <div class="experienceDivBack"> -->
         <img
           src="./images/foraging.jpg"
           alt="A wicker basket filled with foraged mushrooms"
@@ -90,13 +87,12 @@ Add descriptions to the remaining experienceDivs and content to them
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
-        <!-- </div> -->
       </div>
 
       <div class="experienceDiv indoors educational">
         <img
           src="./images/cooking.jpg"
-          alt="An image of someone preparing to cook pasta"
+          alt="An image cooked food in a pan"
           class="experienceImage"
         />
         <p>Cooking and baking classes</p>
@@ -112,10 +108,9 @@ Add descriptions to the remaining experienceDivs and content to them
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
-        <!-- </div> -->
       </div>
 
-      <div class="experienceDiv">
+      <div class="experienceDiv other">
         <img
           src="./images/minibus.jpg"
           alt="A stationary minibus with side door open"
@@ -133,7 +128,6 @@ Add descriptions to the remaining experienceDivs and content to them
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
-        <!-- </div> -->
       </div>
 
       <div class="experienceDiv outdoors educational">
@@ -153,13 +147,12 @@ Add descriptions to the remaining experienceDivs and content to them
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
-        <!-- </div> -->
       </div>
 
       <div class="experienceDiv outdoors nature educational">
         <img
-          src="./images/glamping.jpg"
-          alt="This is a placeholder for an image I made"
+          src="./images/kingfisher.jpg"
+          alt="A kingfisher bird perched on a branch"
           class="experienceImage"
         />
         <p>Birdwatching experiences</p>
@@ -175,7 +168,6 @@ Add descriptions to the remaining experienceDivs and content to them
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
-        <!-- </div> -->
       </div>
 
       <div class="experienceDiv indoors relaxing">
@@ -196,21 +188,21 @@ Add descriptions to the remaining experienceDivs and content to them
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
-        <!-- </div> -->
       </div>
 
-      <div class="experienceDiv">
+      <div class="experienceDiv outdoors nature adventure">
         <img
-          src="./images/glamping.jpg"
+          src="./images/horseRide.jpg"
           alt="This is a placeholder for an image I made"
           class="experienceImage"
         />
-        <p>Placeholder</p>
+        <p>Horse Trekking</p>
         <p>
-          This is a placeholder DIV
+          Take to the trails for an easygoing tour of nature on horseback!
           <br />
           <br />
-          Price: 50 euro PP
+          Price: 100 euro PP <br />
+          Duration: 2.5 Hours
           <br />
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
@@ -235,7 +227,6 @@ Add descriptions to the remaining experienceDivs and content to them
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
-        <!-- </div> -->
       </div>
 
       <div class="experienceDiv outdoors adventure">
@@ -255,106 +246,112 @@ Add descriptions to the remaining experienceDivs and content to them
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
-        <!-- </div> -->
       </div>
 
-      <div class="experienceDiv">
+      <div class="experienceDiv outdoors nature">
         <img
-          src="./images/glamping.jpg"
+          src="./images/cliffWalk.jpg"
           alt="placeholder"
           class="experienceImage"
         />
-        <p>Placeholder</p>
+        <p>Cliff and Coastal Walks</p>
         <p>
-          Placeholder
+          Join a guided tour of the local coastal geography and stories of
+          shipwrecks with a guided coastal walk!
           <br />
           <br />
-          Price: 50 euro PP
+          Price: 50 euro PP <br />
+          Duration: 4 hours
           <br />
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
-        <!-- </div> -->
       </div>
 
-      <div class="experienceDiv">
+      <div class="experienceDiv indoors cultural">
         <img
-          src="./images/glamping.jpg"
-          alt="This is a placeholder for an image I made"
+          src="./images/harp.jpg"
+          alt="Someone playing the harp in a bar"
           class="experienceImage"
         />
-        <p>Placeholder</p>
+        <p>Traditional Irish Music Events</p>
         <p>
-          This is a placeholder DIV
+          Transport to local traditional Irish music events in nearby pubs and
+          venues
           <br />
           <br />
-          Price: 50 euro PP
+          Price: From 10 euro PP <br />
+          Duration: 2-4 hours
           <br />
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
-        <!-- </div> -->
       </div>
 
-      <div class="experienceDiv">
+      <div class="experienceDiv outdoors nature">
         <img
-          src="./images/glamping.jpg"
-          alt="This is a placeholder for an image I made"
+          src="./images/whale.jpg"
+          alt="A whale breaching the water's surface"
           class="experienceImage"
         />
-        <p>Placeholder</p>
+        <p>Coastal wildlife watching</p>
         <p>
-          This is a placeholder DIV
+          Join one of our guides on a coastal wildlife tour. See plants,birds,
+          seals, porpoises and sometimes even whales!
           <br />
           <br />
-          Price: 50 euro PP
+          Price: 50 euro PP <br />
+          Duration: 3 hours
           <br />
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
-        <!-- </div> -->
       </div>
 
-      <div class="experienceDiv">
+      <div class="experienceDiv outdoors cultural">
         <img
-          src="./images/glamping.jpg"
-          alt="This is a placeholder for an image I made"
+          src="./images/castle.jpg"
+          alt="A picture of a ruined castle covered in ivy"
           class="experienceImage"
         />
-        <p>Placeholder</p>
+        <p>Castle and heritage sites tours</p>
         <p>
-          This is a placeholder DIV
+          Have a guided tour, including transport to the locations of several
+          old castles, ringforts and cairns!
           <br />
           <br />
-          Price: 50 euro PP
+          Price: 30 euro PP <br />
+          Duration: 3 Hours
           <br />
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
-        <!-- </div> -->
       </div>
 
-      <div class="experienceDiv">
+      <div class="experienceDiv outdoors">
         <img
+          src="./images/quadBike.jpg"
+          alt="Someone riding a quad bike"
           class="experienceImage"
-          src="./images/glamping.jpg"
-          alt="This is a placeholder for an image I made"
         />
-        <p>THIS IS A PLACEHOLDER DIV</p>
+        <p>Quad bike tours</p>
         <p>
-          PLACEHOLDER WHILE PLACEHOLDER IN OUR STUNNING PLACEHOLDER
+          Have you got a need for speed (and a challenge)? Try out quad bikes
+          and prepare to get mucky!
           <br />
           <br />
-          Price: 50 euro PP
+          Price: 50 euro PP <br />
+          Duration: 1.5 Hours
           <br />
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
       </div>
-      <!-- </div> -->
     </div>
     <br />
-    <a href="index.html">Home</a>
+    <div class="pageBottom">
+      <a href="index.html">Home</a>
+    </div>
     <footer id="experiencesFooter">
       <p>Emerald Escapes 2026</p>
     </footer>
