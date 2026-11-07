@@ -123,6 +123,13 @@ img {
   text-align: center;
 }
 
+#experienceFilters {
+  align-items: center;
+}
+
+.filterButton {
+}
+
 .experiences {
   background-color: #ffffff;
   display: flex;

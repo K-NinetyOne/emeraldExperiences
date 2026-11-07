@@ -21,13 +21,44 @@ Add JS filter function for filters -->
         </button>
       </ul>
     </header>
-    <h3 id="experienceBanner">
-      Read below for more information on the experiences on offer! <br />You can
-      also filter experiences with the toggles below
-    </h3>
+    <div id="experienceBanner">
+      <h3>
+        Read below for more information on the experiences on offer! <br />
+        You can also filter experiences with the toggles below
+      </h3>
+      <div id="experienceFilters">
+        <button class="filterButton" onclick="experienceFilter('all')">
+          All
+        </button>
 
+        <button class="filterButton" onclick="experienceFilter('outdoors')">
+          Outdoors
+        </button>
+
+        <button class="filterButton" onclick="experienceFilter('indoors')">
+          Indoors
+        </button>
+
+        <button class="filterButton" onclick="experienceFilter('adventure')">
+          Adventure
+        </button>
+
+        <button class="filterButton" onclick="experienceFilter('nature')">
+          Nature
+        </button>
+
+        <button class="filterButton" onclick="experienceFilter('educational')">
+          Educational
+        </button>
+
+        <button class="filterButton" onclick="experienceFilter('cultural')">
+          Cultural
+        </button>
+      </div>
+    </div>
+    <br />
     <div class="experiences">
-      <div class="experienceDiv accomadation">
+      <div class="experienceDiv all">
         <img
           src="./images/glamping.jpg"
           alt="An image of two glamping yurts in a field"
@@ -48,7 +79,7 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors nature">
+      <div class="experienceDiv outdoors nature all">
         <img
           src="./images/natureWalk.jpg"
           alt="A hiking trail winding through heather and small trees"
@@ -68,7 +99,7 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors nature">
+      <div class="experienceDiv outdoors nature all">
         <img
           src="./images/foraging.jpg"
           alt="A wicker basket filled with foraged mushrooms"
@@ -89,7 +120,7 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv indoors educational">
+      <div class="experienceDiv indoors educational all">
         <img
           src="./images/cooking.jpg"
           alt="An image cooked food in a pan"
@@ -110,7 +141,7 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv other">
+      <div class="experienceDiv all">
         <img
           src="./images/minibus.jpg"
           alt="A stationary minibus with side door open"
@@ -130,7 +161,7 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors educational">
+      <div class="experienceDiv outdoors educational all">
         <img
           src="./images/astronomy.jpg"
           alt="A telescope pointed toward the night sky"
@@ -149,7 +180,7 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors nature educational">
+      <div class="experienceDiv outdoors nature educational all">
         <img
           src="./images/kingfisher.jpg"
           alt="A kingfisher bird perched on a branch"
@@ -170,7 +201,7 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv indoors relaxing">
+      <div class="experienceDiv indoors all">
         <img
           src="./images/spa.jpg"
           alt="A person getting a massage in a spa"
@@ -190,7 +221,7 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors nature adventure">
+      <div class="experienceDiv outdoors nature adventure all">
         <img
           src="./images/horseRide.jpg"
           alt="This is a placeholder for an image I made"
@@ -209,7 +240,7 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv educational outdoors cultural">
+      <div class="experienceDiv educational outdoors cultural all">
         <img
           src="./images/dublinTour.jpg"
           alt="An image of a tour bus in Dublin City"
@@ -229,7 +260,7 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors adventure">
+      <div class="experienceDiv outdoors adventure all">
         <img
           src="./images/kayaking.jpg"
           alt="A man kayaking on white water rapids"
@@ -248,7 +279,7 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors nature">
+      <div class="experienceDiv outdoors nature all">
         <img
           src="./images/cliffWalk.jpg"
           alt="placeholder"
@@ -268,7 +299,7 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv indoors cultural">
+      <div class="experienceDiv indoors cultural all">
         <img
           src="./images/harp.jpg"
           alt="Someone playing the harp in a bar"
@@ -288,7 +319,7 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors nature">
+      <div class="experienceDiv outdoors nature all">
         <img
           src="./images/whale.jpg"
           alt="A whale breaching the water's surface"
@@ -308,7 +339,7 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors cultural">
+      <div class="experienceDiv outdoors cultural all">
         <img
           src="./images/castle.jpg"
           alt="A picture of a ruined castle covered in ivy"
@@ -328,7 +359,7 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors">
+      <div class="experienceDiv outdoors all">
         <img
           src="./images/quadBike.jpg"
           alt="Someone riding a quad bike"
