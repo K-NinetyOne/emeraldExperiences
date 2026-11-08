@@ -1,7 +1,3 @@
-<!-- To Do: 
-Add filter buttons for filter classes already added
-Add JS filter function for filters -->
-
 <!doctype html>
 
 <html lang="en">
@@ -12,12 +8,12 @@ Add JS filter function for filters -->
   </head>
   <body id="experiencesBody">
     <header>
-      <p>Emerald Escapes</p>
+      <p><a href="./index.html"> Emerald Escapes</a></p>
       <ul id="ulHeader">
         <li><a href="./index.html"> Home</a></li>
         <li><a href="./bookingPage.html"> Booking</a></li>
         <button id="darkModeButton" onclick="toggleDarkMode()">
-          Dark Mode
+          &#127769;
         </button>
       </ul>
     </header>
@@ -54,23 +50,39 @@ Add JS filter function for filters -->
         <button class="filterButton" onclick="experienceFilter('cultural')">
           Cultural
         </button>
+
+        <button class="filterButton" onclick="experienceFilter(30)">
+          &lt; &euro;30
+        </button>
+
+        <button class="filterButton" onclick="experienceFilter(50)">
+          &lt; &euro;50
+        </button>
+
+        <button class="filterButton" onclick="experienceFilter(75)">
+          &lt; &euro;75
+        </button>
+
+        <button class="filterButton" onclick="experienceFilter(100)">
+          &lt; &euro;100
+        </button>
       </div>
     </div>
     <br />
     <div class="experiences">
-      <div class="experienceDiv all">
+      <div class="experienceDiv all 100 75">
         <img
           src="./images/glamping.jpg"
           alt="An image of two glamping yurts in a field"
           class="experienceImage"
         />
-        <p>Glamping pods and Shepherd's Huts</p>
+        <p><b>Glamping pods and Huts</b></p>
         <p>
-          Sleep and relax in our cosy glamping pods and traditional shepherd's
-          huts surrounded by beautiful woods and countryside.
+          Sleep and relax in our cosy glamping pods & huts surrounded by
+          beautiful woods and countryside.
           <br />
           <br />
-          Price: 50 euro PP per night
+          Price: &euro;50 PP per night
           <br />
           Duration: 1 night
           <br />
@@ -79,19 +91,19 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors nature all">
+      <div class="experienceDiv outdoors nature all 30 50 75 100">
         <img
           src="./images/natureWalk.jpg"
           alt="A hiking trail winding through heather and small trees"
           class="experienceImage"
         />
-        <p>Guided Nature Walks</p>
+        <p><b>Guided Nature Walks</b></p>
         <p>
           Explore the local landscape with one of our guide and discover the
           wildlife, history and hidden gems of the area.
           <br />
           <br />
-          Price: 25 euro PP <br />
+          Price: &euro;25 PP <br />
           Duration: 3 hours
           <br />
           <br />
@@ -99,19 +111,19 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors nature all">
+      <div class="experienceDiv outdoors nature all 75 100">
         <img
           src="./images/foraging.jpg"
           alt="A wicker basket filled with foraged mushrooms"
           class="experienceImage"
         />
-        <p>Foraging Walks</p>
+        <p><b>Foraging Walks</b></p>
         <p>
           Learn about the edible plants and wild ingredients growing in our
           surrounding woods and meadows on a guided foraging walk.
           <br />
           <br />
-          Price: 50 euro PP
+          Price: &euro;50 PP
           <br />
           Duration: 3 hours
           <br />
@@ -120,20 +132,20 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv indoors educational all">
+      <div class="experienceDiv indoors educational all 30 50 75 100">
         <img
           src="./images/cooking.jpg"
           alt="An image cooked food in a pan"
           class="experienceImage"
         />
-        <p>Cooking and baking classes</p>
+        <p><b>Cooking and baking classes</b></p>
         <p>
           Learn new skills with our fun traditional cookery and baking classes.
           Depending on season will we use ingredients obtained on our foraging
           walks!
           <br />
           <br />
-          Price: 20 euro popular<br />
+          Price: &euro;20 PP<br />
           Duration: 4 hours
           <br />
           <br />
@@ -141,19 +153,19 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv all">
+      <div class="experienceDiv all 30 50 75 100">
         <img
           src="./images/minibus.jpg"
           alt="A stationary minibus with side door open"
           class="experienceImage"
         />
-        <p>Kilkenny Nights Out</p>
+        <p><b>Kilkenny Nights Out</b></p>
         <p>
           Enjoy a night out in Kilkenny with our convenient minibus service to
           and from the city. This is popular on weekends!
           <br />
           <br />
-          Price: 15 euro PP<br />
+          Price: &euro;15 PP<br />
           Duration: Drop off/Pickup
           <br />
           <br />
@@ -161,38 +173,38 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors educational all">
+      <div class="experienceDiv outdoors educational all 30 50 75 100">
         <img
           src="./images/astronomy.jpg"
           alt="A telescope pointed toward the night sky"
           class="experienceImage"
         />
-        <p>Astronomy Workshops</p>
+        <p><b>Astronomy Workshops</b></p>
         <p>
           Discover the night sky from our beautiful gardens with an introduction
           to stargazing, planets, constellations and more.
           <br />
           <br />
-          Price: 15 euro <br />PP Duration: 2 hours
+          Price: &euro;15 <br />PP Duration: 2 hours
           <br />
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
       </div>
 
-      <div class="experienceDiv outdoors nature educational all">
+      <div class="experienceDiv outdoors nature educational all 30 50 75 100">
         <img
           src="./images/kingfisher.jpg"
           alt="A kingfisher bird perched on a branch"
           class="experienceImage"
         />
-        <p>Birdwatching experiences</p>
+        <p><b>Birdwatching experiences</b></p>
         <p>
           Come and join us for a guided walk in the surrounding area to look for
           local resident and migratory bird species!
           <br />
           <br />
-          Price: 30 euro PP
+          Price: &euro;25 PP
           <br />
           Duration: 3 hours
           <br />
@@ -201,18 +213,18 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv indoors all">
+      <div class="experienceDiv indoors all 100">
         <img
           src="./images/spa.jpg"
           alt="A person getting a massage in a spa"
           class="experienceImage"
         />
-        <p>Spa Experiences</p>
+        <p><b>Spa Experiences</b></p>
         <p>
           Treat yourself to a relaxing spa experience in beautiful surroundings.
           <br />
           <br />
-          Price: 100 euro PP
+          Price: &euro;90 PP
           <br />
           Duration: 4 hours
           <br />
@@ -221,18 +233,18 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors nature adventure all">
+      <div class="experienceDiv outdoors nature adventure all 100">
         <img
           src="./images/horseRide.jpg"
           alt="This is a placeholder for an image I made"
           class="experienceImage"
         />
-        <p>Horse Trekking</p>
+        <p><b>Horse Trekking</b></p>
         <p>
           Take to the trails for an easygoing tour of nature on horseback!
           <br />
           <br />
-          Price: 100 euro PP <br />
+          Price: &euro;85 PP <br />
           Duration: 2.5 Hours
           <br />
           <br />
@@ -240,19 +252,19 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv educational outdoors cultural all">
+      <div class="experienceDiv educational outdoors cultural all 50 75 100">
         <img
           src="./images/dublinTour.jpg"
           alt="An image of a tour bus in Dublin City"
           class="experienceImage"
         />
-        <p>Guided City Tours</p>
+        <p><b>Guided City Tours</b></p>
         <p>
           Try a tour with a local guide to learn the history of one of our
           destination cities! (Kiklenny, Dublin, Waterford)
           <br />
           <br />
-          Price: 30 euro PP<br />
+          Price: &euro;30 PP<br />
           Duration: 2 hours
           <br />
           <br />
@@ -260,38 +272,38 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors adventure all">
+      <div class="experienceDiv outdoors adventure all 50 75 100">
         <img
           src="./images/kayaking.jpg"
           alt="A man kayaking on white water rapids"
           class="experienceImage"
         />
-        <p>Kayaking and Canoeing</p>
+        <p><b>Kayaking and Canoeing</b></p>
         <p>
           Rain or sun (you will probably get wet anyway!) try your skills with
           kayaking and canoeing
           <br />
           <br />
-          Price: 40 euro PP <br />Duration: 2 hours
+          Price: &euro;40 PP <br />Duration: 2 hours
           <br />
           <br />
           <a href="./bookingPage.html"><button>Enquire Now!</button></a>
         </p>
       </div>
 
-      <div class="experienceDiv outdoors nature all">
+      <div class="experienceDiv outdoors nature all 50 75 100">
         <img
           src="./images/cliffWalk.jpg"
           alt="placeholder"
           class="experienceImage"
         />
-        <p>Cliff and Coastal Walks</p>
+        <p><b>Cliff and Coastal Walks</b></p>
         <p>
           Join a guided tour of the local coastal geography and stories of
           shipwrecks with a guided coastal walk!
           <br />
           <br />
-          Price: 50 euro PP <br />
+          Price: &euro;35 PP <br />
           Duration: 4 hours
           <br />
           <br />
@@ -299,19 +311,19 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv indoors cultural all">
+      <div class="experienceDiv indoors cultural all 30 50 75 100">
         <img
           src="./images/harp.jpg"
           alt="Someone playing the harp in a bar"
           class="experienceImage"
         />
-        <p>Traditional Irish Music Events</p>
+        <p><b>Traditional Irish Music Events</b></p>
         <p>
           Transport to local traditional Irish music events in nearby pubs and
           venues
           <br />
           <br />
-          Price: From 10 euro PP <br />
+          Price: From &euro;10 PP <br />
           Duration: 2-4 hours
           <br />
           <br />
@@ -319,19 +331,19 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors nature all">
+      <div class="experienceDiv outdoors nature all 75 100">
         <img
           src="./images/whale.jpg"
           alt="A whale breaching the water's surface"
           class="experienceImage"
         />
-        <p>Coastal wildlife watching</p>
+        <p><b>Coastal wildlife watching</b></p>
         <p>
           Join one of our guides on a coastal wildlife tour. See plants,birds,
           seals, porpoises and sometimes even whales!
           <br />
           <br />
-          Price: 50 euro PP <br />
+          Price: &euro;50 PP <br />
           Duration: 3 hours
           <br />
           <br />
@@ -339,19 +351,19 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors cultural all">
+      <div class="experienceDiv outdoors cultural all 50 75 100">
         <img
           src="./images/castle.jpg"
           alt="A picture of a ruined castle covered in ivy"
           class="experienceImage"
         />
-        <p>Castle and heritage sites tours</p>
+        <p><b>Castle and heritage sites tours</b></p>
         <p>
           Have a guided tour, including transport to the locations of several
           old castles, ringforts and cairns!
           <br />
           <br />
-          Price: 30 euro PP <br />
+          Price: &euro;35 PP <br />
           Duration: 3 Hours
           <br />
           <br />
@@ -359,19 +371,19 @@ Add JS filter function for filters -->
         </p>
       </div>
 
-      <div class="experienceDiv outdoors all">
+      <div class="experienceDiv outdoors adventure all 75 100">
         <img
           src="./images/quadBike.jpg"
           alt="Someone riding a quad bike"
           class="experienceImage"
         />
-        <p>Quad bike tours</p>
+        <p><b>Quad bike tours</b></p>
         <p>
           Have you got a need for speed (and a challenge)? Try out quad bikes
           and prepare to get mucky!
           <br />
           <br />
-          Price: 50 euro PP <br />
+          Price: &euro;50 PP <br />
           Duration: 1.5 Hours
           <br />
           <br />

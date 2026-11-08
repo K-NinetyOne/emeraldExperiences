@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap");
+
 /* Global styling */
 
 * {
@@ -16,10 +18,14 @@ header {
   display: flex;
   flex-grow: 1;
   font-weight: bolder;
-  font-size: 22px;
+  font-size: 1.7rem;
   justify-content: space-between;
   align-items: center;
   padding: 1vw 5vw 0vw 5vw;
+}
+
+header * {
+  font-family: "IM Fell English", serif;
 }
 
 footer {
@@ -33,6 +39,10 @@ footer {
   padding: 0vw 10vw 0vw 10vw;
   margin: 0;
   text-align: center;
+}
+
+.heroBanner * {
+  font-family: "IM Fell English", serif;
 }
 
 .pageBottom {
@@ -104,7 +114,7 @@ footer {
 
 .experienceListItem {
   max-width: 30vw;
-  margin: 5px 5vw;
+  margin: 0px 5vw;
 }
 
 /* Experiences Page */
@@ -125,9 +135,14 @@ img {
 
 #experienceFilters {
   align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
 }
 
 .filterButton {
+  border-radius: 5px;
 }
 
 .experiences {
@@ -146,7 +161,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  flex: 0 1 20%;
+  flex: 0.1 1 20%;
   text-align: center;
   margin: 0;
   padding: 5px 2vw;
@@ -163,6 +178,8 @@ img {
   background-color: white;
   text-align: center;
 }
+
+/* Booking Page */
 
 #booking-page {
   display: flex;
@@ -183,12 +200,13 @@ img {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 1vw 2vw;
 }
 
 form {
   background-color: orange;
-  margin: 25px 25px;
-  padding: 25px 100px;
+  margin: 25px;
+  padding: 25px;
   max-width: 80vw;
   display: flex;
   justify-content: flex-start;
@@ -212,4 +230,8 @@ form {
 
 #commentsAndRequests {
   height: 120px;
+}
+
+#contactDetails {
+  padding: 3vw 1vw;
 }

@@ -19,13 +19,11 @@ darkModeButton = document.querySelector("#darkModeButton");
 
 let darkMode = false;
 
-//If possible implement local storage to allow darkMode to carry across pages/ on refresh https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
-
 function toggleDarkMode() {
   //DarkMode ON
   if (!darkMode) {
     darkMode = true;
-    darkModeButton.innerText = "Light Mode";
+    darkModeButton.innerHTML = "&#127774;";
 
     for (i = 0; i < pageTop.length; ++i) {
       pageTop[i].style.backgroundColor = "#747774";
@@ -55,7 +53,7 @@ function toggleDarkMode() {
     //DarkMode OFF
   } else if (darkMode) {
     darkMode = false;
-    darkModeButton.innerText = "Dark Mode";
+    darkModeButton.innerHTML = "&#127769";
 
     body.style.backgroundColor = "#ffa500";
     header.style.backgroundColor = "#007000";
@@ -91,7 +89,8 @@ function toggleDarkMode() {
 // Date: 2014/07/14
 // Available at https://css-tricks.com/snippets/javascript/loop-queryselectorall-matches/
 // Accessed: 2026/11/01
-
+//
+//
 //Filter Experiences
 function experienceFilter(className) {
   let experienceDivs = document.getElementsByClassName("experienceDiv");
@@ -108,7 +107,8 @@ function experienceFilter(className) {
 // How to Filter a DIV Element Based on its Class Name using JavaScript?
 // Available at: https://www.geeksforgeeks.org/css/how-to-filter-a-div-element-based-on-its-class-name-using-javascript/
 // Accessed: 2026/11/07
-
+//
+//
 //Email Validation
 function validateEmail() {
   if (
